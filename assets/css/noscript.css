@@ -1,0 +1,186 @@
+@import url(font-awesome.min.css);
+
+/*
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/* cookies */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Roboto' sans-serif;
+}
+
+.container {
+    width: 1600px;
+    margin: auto;
+}
+
+.subcontainer {
+    width: 85%;
+    margin: auto;
+}
+
+#cookies {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    /* display: none; */
+}
+
+.cookies {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cookies a {
+    color: yellow;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#cookies-btn {
+    border-radius: 5px;
+    padding: 8px 12px 8px 12px;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    border: 3px solid white;
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 1600px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cookies {
+        padding: 10px 0;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f3f3f3;
+}
+
+#consentBox {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#consentBox.hide {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+}
+
+::selection {
+    color: #fff;
+    background: #229a0f;
+}
+
+#consentContent p {
+    color: #858585;
+    margin: 10px 0 20px 0;
+}
+
+#consentContent .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.consentButton,
+.rejectButton {
+    padding: 12px 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.consentButton {
+    background: #2a910b;
+    margin-right: 10px;
+}
+
+.rejectButton {
+    color: #111211;
+    background: transparent;
+    border: 2px solid #099c2c;
+    text-decoration: none;
+}
+
+#consentBox img {
+    max-width: 90px;
+}
+
+#consentHeader {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+/* cookies */
+
+/* Wrapper */
+
+#wrapper {
+    background-color: #212931;
+    background-image: url('../../images/overlay.png'),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+        url('../../images/bg.jpg');
+    background-size: auto, auto, 100% auto;
+    background-position: center, center, top center;
+    background-repeat: repeat, no-repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed;
+}
+
+#wrapper.fade-in:before {
+    display: none;
+}
+
+/* Intro */
+
+body.is-preload #intro {
+    opacity: 1;
+}
+
+body.is-preload #intro:not(.hidden) + #header + #nav {
+    -moz-transform: none;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    opacity: 1;
+}
